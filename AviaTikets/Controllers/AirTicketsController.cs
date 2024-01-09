@@ -25,7 +25,7 @@ namespace AviaTikets.Controllers
 
             var find = availableTickets.Where(t => t.StartAirport == tickets.StartAirport && t.EndAirport == tickets.EndAirport);
 
-            return View(availableTickets);
+            return View(find);
         }
 
         public IActionResult Index()
