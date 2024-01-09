@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Tickets>
+@{
+    ViewData["Title"] = "Find Tickets";
+}
+<section>
+    <div class="background-color-tikets">
+        <div class="container">
+            <div class="info-panel">
+                <div class="input-panel">
+                    <input type="text" class="input-text bor-radius-left" placeholder="Звідки">
+                    <input type="text" class="input-text" placeholder="Куди">
+                    <input type="date" class="date-input">
+                    <input type="date" class="date-input">
+                    <select class="spad-menu bor-radius-right">
+                        <option value="value1">Економ</option>
+                        <option value="value1">Комфорт</option>
+                        <option value="value2">Бізнес</option>
+                        <option value="value3">Перший клас</option>
+                    </select>
+                    <button type="submit" class="find-tickets-button">Знайти квитки</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div>
+        @foreach (var tickets in Model)
+        {
+            <h1>@tickets.StartAirport</h1>
+            <h1>@tickets.EndAirport</h1>
+            <h1>@tickets.DepartureDate</h1>
+            <h1>@tickets.ArrivalDate</h1>
+            <h1>@tickets.ClassSeat</h1>
+        }
+    </div>
+</section>
+
+
+
+

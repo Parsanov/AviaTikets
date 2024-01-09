@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+
+body{
+    background-color: hsl(0, 0%, 90%);
+}
+
+.background-navbar
+{
+    background-color: #01497c;
+}
+
+
+.background-color-tikets{
+    background-color: #01497c;
+    min-height: 200px;
+    padding: 0;
+    margin: 0;
+}
+.background-color{
+    background-color: #01497c;
+    min-height: 400px;
+}
+
+
+body{
+    max-height: 1200px;
+    font-family: 'Roboto', sans-serif;
+    
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+   max-width: 1200px;
+   margin: auto;
+}
+
+
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h1
+{
+    font-size: 30px;
+}
+
+.navbar ul{
+    padding: 18px 0;
+}
+
+.navbar li{
+   
+    list-style: none;
+    float: left;
+    margin: 0 20px;
+}
+
+.navbar a{
+    
+    padding: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar a:hover
+{
+    background-color: hsl(205, 98%, 29%);
+}
+
+
+.info-panel{
+    padding-top: 70px;
+    text-align: center;
+    margin: auto;
+}
+
+.info-panel h1
+{
+    color: white;
+    margin-bottom: 80px;
+}
+
+
+.input-panel input, select 
+{
+    text-decoration: none;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+}
+
+.bor-radius-left{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.bor-radius-right{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.input-panel button{
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 150px;
+    border: none;
+    background-color: #f35b04;
+    padding: 15px;
+    color: white;
+    font-weight: 800;
+    height: 55px;
+}
+
+
+.input-panel button:hover{
+    background-color: #f18701;
+}
+
+.input-text
+{
+    width: 130px;
+    height: 24px;
+}
+
+.spad-menu
+{
+    height: 53.5px;
+}
+
+.card {
+    width: 800px;
+    padding: 25px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.card p{
+    font-size: 18px;
+}
+
+.cities{
+   display: flex;
+   float: right;
+}
+
+.time-fly{
+    display: flex;
+}
+
+.card-time-departure{
+    margin-right: 10px;
+}
+
+.card-duration-arrival{
+    margin-left: 10px;
+}
+
+.arrival-city{
+    margin-left: 10px;
+}
+
+.departure-city{
+    margin-right: 10px;
+}

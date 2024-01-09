@@ -1,0 +1,29 @@
+﻿@model Tickets
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<form asp-action="FindTickets" method="post">
+    <div class="background-color">
+        <div class="conteiner">
+            <div class="info-panel">
+                <h1>Пошук дешевих авіаквитків</h1>
+                <div class="input-panel">
+                    <input asp-for="StartAirport" type="text" class="input-text bor-radius-left" placeholder="Звідки">
+                    <input asp-for="EndAirport" type="text" class="input-text" placeholder="Куди">
+                    <input asp-for="DepartureDate" type="date">
+                    <input asp-for="ArrivalDate" type="date">
+                    <select asp-for="ClassSeat" class="spad-menu bor-radius-right">
+                        <option value="Економ">Економ</option>
+                        <option value="Комфорт">Комфорт</option>
+                        <option value="Бізнес">Бізнес</option>
+                        <option value="Перший клас">Перший клас</option>
+                    </select>
+                    <button type="submit">Знайти квитки</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

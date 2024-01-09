@@ -1,0 +1,20 @@
+﻿@model List<Tickets>
+
+@{
+    ViewData["Title"] = "Tickets";
+}
+
+@foreach (var ticket in Model)
+{
+    <h1>@ticket.Id</h1>
+
+    <h1>@ticket.StartAirport</h1>
+
+    <h1>@ticket.EndAirport</h1>
+
+    <h1>@ticket.DepartureDate</h1>
+
+    <h1>@ticket.ArrivalDate</h1>
+
+    <h1>@ticket.ClassSeat</h1>
+}
